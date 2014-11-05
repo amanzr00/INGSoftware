@@ -1,9 +1,11 @@
 package com.example.thi;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class TemplateActivity extends Activity {
 
@@ -11,6 +13,7 @@ public class TemplateActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_template);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override
@@ -30,5 +33,23 @@ public class TemplateActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * Method to select or take a picture for the new establishment
+	 * 
+	 * @param view
+	 */
+	public void upImage(View view) {
+		startActivity(new Intent(this, CameraActivity.class));
+	}
+
+	/**
+	 * Method to cancel the operation
+	 * 
+	 * @param view
+	 */
+	public void cancel(View view) {
+		finish();
 	}
 }
