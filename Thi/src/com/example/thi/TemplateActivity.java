@@ -2,13 +2,15 @@ package com.example.thi;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 public class TemplateActivity extends Activity {
-
+private static final int TOMAR_FOTO = 1;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,10 +42,20 @@ public class TemplateActivity extends Activity {
 	 * 
 	 * @param view
 	 */
-	public void upImage(View view) {
-		startActivity(new Intent(this, CameraActivity.class));
+	public void upImageWithCamera(View view) {
+		Intent camaraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+		startActivityForResult(camaraIntent, TOMAR_FOTO);
+		
 	}
 
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+		if (requestCode == TOMAR_FOTO) {
+			Bitmap image = (Bitmap) data.getExtras().get("data");
+			ImageView iv_foto = (ImageView) findViewById(R.id.photoView);
+			iv_foto.setImageBitmap(image);
+		}
+	}
 	/**
 	 * Method to cancel the operation
 	 * 

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kks.TemplateActivity" >
+
+    <TextView
+        android:id="@+id/edit_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_establishment" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_establishment" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address" />
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_address" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button_up_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="upImage"
+            android:text="@string/button_up_image" />
+
+        <ImageView
+            android:id="@+id/photoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/photo_view" />
+
+        <ImageButton
+            android:id="@+id/button_camera"
+            android:layout_toRightOf="@id/photoView"
+            android:contentDescription="@string/button_camera"
+            android:src="@drawable/ic_action_camera"
+            android:onClick="upImageWithCamera" />
+
+        <ImageButton
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@string/button_cancel"
+            android:onClick="cancel"
+            android:paddingTop="15sp"
+            android:src="@drawable/ic_action_cancel" />
+
+        <ImageButton
+            android:id="@+id/button_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@string/button_accept"
+            android:paddingTop="15sp"
+            android:src="@drawable/ic_action_accept" />
+    </RelativeLayout>
+
+</LinearLayout>
