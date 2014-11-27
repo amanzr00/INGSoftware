@@ -1,5 +1,6 @@
 package com.example.thi;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,12 +11,16 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class TemplateActivity extends Activity {
-private static final int TOMAR_FOTO = 1;
+	private static final int TOMAR_FOTO = 1;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_template);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
+		ActionBar actionBar = getActionBar();
+		actionBar.setSubtitle("Plantilla");
+
 	}
 
 	@Override
@@ -43,19 +48,29 @@ private static final int TOMAR_FOTO = 1;
 	 * @param view
 	 */
 	public void upImageWithCamera(View view) {
-		Intent camaraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+		Intent camaraIntent = new Intent(
+				android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
 		startActivityForResult(camaraIntent, TOMAR_FOTO);
-		
+
 	}
 
 	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == TOMAR_FOTO) {
-			Bitmap image = (Bitmap) data.getExtras().get("data");
-			ImageView iv_foto = (ImageView) findViewById(R.id.photoView);
-			iv_foto.setImageBitmap(image);
+			
+			if (data == null) {
+				
+			} else {
+				Bitmap image = (Bitmap) data.getExtras().get("data");
+				ImageView iv_foto = (ImageView) findViewById(R.id.photoView);
+				iv_foto.setImageBitmap(image);
+			}
+		}
+		else  {
+			
 		}
 	}
+
 	/**
 	 * Method to cancel the operation
 	 * 

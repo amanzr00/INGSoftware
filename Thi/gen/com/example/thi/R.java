@@ -1655,8 +1655,8 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f090030;
         public static final int action_mode_bar_stub=0x7f09002f;
         public static final int action_mode_close_button=0x7f090022;
-        public static final int action_new_establishment=0x7f090054;
-        public static final int action_settings=0x7f090053;
+        public static final int action_new_establishment=0x7f090057;
+        public static final int action_settings=0x7f090056;
         public static final int activity_chooser_view_content=0x7f090023;
         public static final int address=0x7f09004c;
         public static final int always=0x7f090014;
@@ -1688,6 +1688,8 @@ containing a value of this type.
         public static final int image=0x7f090025;
         public static final int imgView=0x7f090047;
         public static final int listMode=0x7f09000a;
+        public static final int list_hairdressers=0x7f090053;
+        public static final int list_hotels=0x7f090054;
         public static final int list_item=0x7f090027;
         public static final int mEditText=0x7f090048;
         public static final int mListView=0x7f090049;
@@ -1695,6 +1697,7 @@ containing a value of this type.
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int pager=0x7f090055;
         public static final int photoView=0x7f090050;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
@@ -1781,7 +1784,10 @@ containing a value of this type.
         public static final int activity_main=0x7f030018;
         public static final int activity_presentation=0x7f030019;
         public static final int activity_template=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int fragment_hairdressers=0x7f03001b;
+        public static final int fragment_hotels=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int view_pager=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1844,10 +1850,10 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000d;
         public static final int action_new_establishment=0x7f0a0011;
         public static final int action_settings=0x7f0a0010;
-        public static final int addItemContentDescription=0x7f0a0020;
+        public static final int addItemContentDescription=0x7f0a0023;
         /**  Pruebas 
          */
-        public static final int addItemHint=0x7f0a001f;
+        public static final int addItemHint=0x7f0a0022;
         public static final int address=0x7f0a0017;
         public static final int app_name=0x7f0a000f;
         public static final int button_accept=0x7f0a001c;
@@ -1859,8 +1865,13 @@ containing a value of this type.
         public static final int button_up_image=0x7f0a001d;
         public static final int edit_address=0x7f0a0018;
         public static final int edit_establishment=0x7f0a0016;
+        public static final int hairdressers=0x7f0a0021;
+        /**  Establishments 
+         */
+        public static final int hotels=0x7f0a001f;
         public static final int image_view=0x7f0a0019;
         public static final int name_establishment=0x7f0a0015;
+        public static final int restaurants=0x7f0a0020;
         public static final int search=0x7f0a0012;
         public static final int title_activity_principal=0x7f0a0013;
         public static final int title_activity_template=0x7f0a0014;

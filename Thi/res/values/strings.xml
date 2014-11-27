@@ -20,6 +20,11 @@
     <string name="button_up_image">Subir una imagen</string>
     <string name="button_camera">Camara</string>
 
+    <!-- Establishments -->
+    <string name="hotels">Hoteles</string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="hairdressers">Peluquerias</string>
+
     <!-- Pruebas -->
     <string name="addItemHint">New To Do Item</string>
     <string name="addItemContentDescription">New To Do Item</string>

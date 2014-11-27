@@ -353,8 +353,8 @@ int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f090030
 int id action_mode_bar_stub 0x7f09002f
 int id action_mode_close_button 0x7f090022
-int id action_new_establishment 0x7f090054
-int id action_settings 0x7f090053
+int id action_new_establishment 0x7f090057
+int id action_settings 0x7f090056
 int id activity_chooser_view_content 0x7f090023
 int id address 0x7f09004c
 int id always 0x7f090014
@@ -386,6 +386,8 @@ int id ifRoom 0x7f090016
 int id image 0x7f090025
 int id imgView 0x7f090047
 int id listMode 0x7f09000a
+int id list_hairdressers 0x7f090053
+int id list_hotels 0x7f090054
 int id list_item 0x7f090027
 int id mEditText 0x7f090048
 int id mListView 0x7f090049
@@ -393,6 +395,7 @@ int id middle 0x7f09001d
 int id never 0x7f090017
 int id none 0x7f09000f
 int id normal 0x7f09000b
+int id pager 0x7f090055
 int id photoView 0x7f090050
 int id progress_circular 0x7f090007
 int id progress_horizontal 0x7f090008
@@ -453,7 +456,10 @@ int layout activity_camera 0x7f030017
 int layout activity_main 0x7f030018
 int layout activity_presentation 0x7f030019
 int layout activity_template 0x7f03001a
-int layout support_simple_spinner_dropdown_item 0x7f03001b
+int layout fragment_hairdressers 0x7f03001b
+int layout fragment_hotels 0x7f03001c
+int layout support_simple_spinner_dropdown_item 0x7f03001d
+int layout view_pager 0x7f03001e
 int menu main 0x7f0c0000
 int menu principal 0x7f0c0001
 int menu template 0x7f0c0002
@@ -474,8 +480,8 @@ int string abc_shareactionprovider_share_with 0x7f0a000e
 int string abc_shareactionprovider_share_with_application 0x7f0a000d
 int string action_new_establishment 0x7f0a0011
 int string action_settings 0x7f0a0010
-int string addItemContentDescription 0x7f0a0020
-int string addItemHint 0x7f0a001f
+int string addItemContentDescription 0x7f0a0023
+int string addItemHint 0x7f0a0022
 int string address 0x7f0a0017
 int string app_name 0x7f0a000f
 int string button_accept 0x7f0a001c
@@ -485,8 +491,11 @@ int string button_send 0x7f0a001a
 int string button_up_image 0x7f0a001d
 int string edit_address 0x7f0a0018
 int string edit_establishment 0x7f0a0016
+int string hairdressers 0x7f0a0021
+int string hotels 0x7f0a001f
 int string image_view 0x7f0a0019
 int string name_establishment 0x7f0a0015
+int string restaurants 0x7f0a0020
 int string search 0x7f0a0012
 int string title_activity_principal 0x7f0a0013
 int string title_activity_template 0x7f0a0014
